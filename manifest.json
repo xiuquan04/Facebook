@@ -1,0 +1,22 @@
+{
+
+  "manifest_version": 2,
+  "name": "Facebook",
+  "version": "1.0",
+
+  "description": "Remove Facebook sponsored ads blocks.",
+
+  "icons": {
+    "48": "noads.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["facebookads.js"]
+	  
+    }
+  ]
+  
+
+}
